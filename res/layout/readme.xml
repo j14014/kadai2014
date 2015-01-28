@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="遊び方"
+            android:textColor="#FF0000"
+            android:textSize="60dp" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button1"
+            android:text="トップ画面に戻る" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="27dp"
+            android:text="Player1とPlayer2で交代で攻撃をしていきます。\n\nPlayer名が赤文字になっているPlayerが現在攻撃をする側となります。\n\n「攻撃」ボタンを押し,「月」「太陽」「地球」のどれかを発します。\n\n「月」「太陽」「地球」の3つの単語がランダムで指定され,\n指定された単語とPlayerが発した単語が,\n一致すれば30ダメージ,一致しなければ10ダメージ入ります。\n\n先に相手のHPを0にしたPlayerが勝利となります。"
+            android:textSize="30dp"
+            android:gravity="center" />
+
+    </RelativeLayout>
+
+</LinearLayout>
